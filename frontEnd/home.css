@@ -1,0 +1,29 @@
+
+.title{
+    letter-spacing: 2px;
+    position: relative;
+    /* display: flex;
+    justify-content: center; */
+    color: #d59b04!important;
+    text-align:center;
+    width: fit-content;
+    margin: auto;
+
+}
+.title::before{
+    position: absolute;
+    content:"";
+    border-bottom:2px solid ;
+    display: inline-block;
+    margin: 0 auto;
+    width: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .3s ease-in-out;
+}
+
+.title:hover:before{
+    width: 70%;
+
+}
